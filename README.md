@@ -1,3 +1,4 @@
+![Create Pull Request](https://github.com/dmitry-shibanov/quotegenerator/workflows/Create%20Pull%20Request/badge.svg)
 ### What needs to be done:
 - [x] - add github actions
 - [x] - add github pages
@@ -7,5 +8,5 @@
 
 ### Images:
 - PWA support: 
-
-- Link to github pages: 
+![Pwa check support](doc/pwa-support.png?raw=true "Title")
+- Link to github pages: https://dmitry-shibanov.github.io/quotegenerator/
