@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #dde5db;
+  min-height: 100vh;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%2392acac' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  display: flex;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 2.75rem; /*1rem - 16px*/
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(80, 75, 75);
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+#credit_author {
+  position: fixed;
+  left: 0;
+  bottom: 2rem;
+  width: 100%;
+}
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  /* some CSS here */
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px) {
+  .quote-container {
+    margin: auto 10px;
+    max-width: 300px;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  .fa-quote-left {
+    font-size: 2rem;
+  }
+
+  .fa-twitter {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.7rem;
+    height: 1.5rem;
+    padding: 0.5rem 1.8rem;
+  }
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .quote-container {
+    max-height: 270px;
+  }
+
+  .fa-quote-left {
+    font-size: 1.2rem;
+  }
+
+  #author {
+    font-size: 1.3rem;
+  }
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .quote-container {
+    margin: auto 10px;
+    max-width: 300px;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  .fa-quote-left {
+    font-size: 2rem;
+  }
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  .quote-container {
+    margin: auto 10px;
+    max-width: 300px;
+  }
+
+  .fa-quote-left {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-height: 400px) {
+  .quote-container {
+    margin: auto 10px;
+    max-width: 600px;
+    max-height: 340px;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  .fa-quote-left {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 768px) {
+  .quote-container {
+    margin: auto 10px;
+    max-width: 600px;
+    max-height: 740px;
+  }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 400px) {
+  .quote-container {
+    margin: auto 10px;
+    max-width: 600px;
+  }
+
+  .quote-text {
+    font-size: 2rem;
+  }
+
+  .fa-quote-left {
+    font-size: 4rem;
+  }
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px) {
+  .quote-container {
+    margin: auto 10px;
+    max-width: 900px;
+  }
+
+  .quote-text {
+    font-size: 2rem;
+  }
+
+  .fa-quote-left {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" />
+    <link href="styles/loader.css" rel="stylesheet" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="images/icon-152x152.png">   
+    <meta name="theme-color" content="white"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes">  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+    <meta name="apple-mobile-web-app-title" content="Quotes generator"> 
+    <meta name="msapplication-TileImage" content="images/icon-144x144.png">  
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <title>Quotes generator</title>
+</head>
+<body>
+    
+    <div class="quote-container" id="quote-container">
+        <div class="quote-text">
+            <i class="fas fa-quote-left">
+                <span id="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ad velit nobis commodi sed recusandae atque.</span>
+            </i>
+        </div>
+        <div class="quote-author">
+            <sapn id="author">
+                Author
+            </span>
+        </div>
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button id="new-quote">
+                New Quote
+            </button>
+        </div>
+    </div>
+    <div class="loader" id="loader"></div>
+    <div id="credit_author">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <script src="js/index.js"></script>
+</body>
+</html>

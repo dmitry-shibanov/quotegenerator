@@ -1,0 +1,23 @@
+name: Create Pull Request
+
+on: [push, pull_request]
+
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-16.04, ubuntu-18.04, macos-latest, windows-2016, windows-2019]
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Npm install
+      run: |
+        npm install
+        npx install-peerdeps --dev eslint-config-airbnb
+
+    - name: Run lint
+      run: npm run lint
